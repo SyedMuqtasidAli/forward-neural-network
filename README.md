@@ -1,91 +1,99 @@
-# forward-neural-network
-You are going to build a neural network for the image classification task. You will train the model on the diabetes prediction dataset.
-Group 1 Construct a forward neural network
-(weight ~60%)
+# Forward Neural Network for Diabetes Prediction
 
-With this group of tasks, you are going to build a neural network for the image classification task. You will train the model on the diabetes prediction dataset.
+This project focuses on building a forward neural network for predicting diabetes using a given dataset. The tasks include understanding the data, setting up a model for training, fitting the model, improving the model, analyzing learned representations, and investigating neural collapse in deep learning.
 
-# Task 1.1 Understanding the data
-(weight ~20%)
+## Table of Contents
+- [Group 1: Construct a Forward Neural Network](#group-1-construct-a-forward-neural-network)
+  - [Task 1.1: Understanding the Data](#task-11-understanding-the-data)
+  - [Task 1.2: Setting Up a Model for Training](#task-12-setting-up-a-model-for-training)
+  - [Task 1.3: Fitting the Model](#task-13-fitting-the-model)
+- [Group 2: Improve the Model](#group-2-improve-the-model)
+  - [Task 2.1: Check the Training Using TensorBoard](#task-21-check-the-training-using-tensorboard)
+  - [Task 2.2: Apply Regularisation](#task-22-apply-regularisation)
+- [Group 3: Analyze the Learned Representations](#group-3-analyze-the-learned-representations)
+- [Group 4: Investigating Neural Collapse in Deep Learning](#group-4-investigating-neural-collapse-in-deep-learning)
+  - [Task 4.1: Research and Understand the Concept of Neural Collapse](#task-41-research-and-understand-the-concept-of-neural-collapse)
+  - [Task 4.2: Reproduce the NC Results](#task-42-reproduce-the-nc-results)
+- [Contact](#contact)
+- [License](#license)
 
-Describe the target classes for the prediction task. Display 10 training examples from each target class. Do you see any patterns?
-Describe the data types of each feature. What preprocessing steps are required? Why?
-Prepare the data for learning a neural network, including creating training, validation, and test datasets. How many training examples and how many test examples are you using?
-# Task 1.2 Setting up a model for training
-(weight ~ 20%)
+## Group 1: Construct a Forward Neural Network
 
-Construct a deep feedforward neural network. In other words, you can use only fully connected (dense) layers. You need to decide and report the following configurations:
+### Task 1.1: Understanding the Data
+- Describe the target classes for the prediction task.
+- Display 10 training examples from each target class. Identify any patterns.
+- Describe the data types of each feature.
+- Identify necessary preprocessing steps and their reasons.
+- Prepare the data for learning a neural network, including creating training, validation, and test datasets.
+- Specify the number of training and test examples used.
 
-Output layer:
-How many output nodes?
-Which activation function?
-Hidden layers:
-How many hidden layers?
-How many nodes in each layer?
-Which activation function for each layer?
-Input layer
-What is the input size?
-Do you need to reshape the input? Why?
-Justify your model design decisions.
+### Task 1.2: Setting Up a Model for Training
+- Construct a deep feedforward neural network using only fully connected (dense) layers.
+- Report configurations:
+  - Output layer: number of nodes and activation function.
+  - Hidden layers: number of layers, nodes in each layer, and activation functions.
+  - Input layer: input size and whether reshaping is necessary.
+- Justify model design decisions.
+- Plot the model structure using `keras.utils.plot_model` or similar tools.
 
-Plot the model structure using keras.utils.plot_model or similar tools.
+### Task 1.3: Fitting the Model
+- Decide and report:
+  - Loss function.
+  - Metrics for model evaluation.
+- Explain roles in model fitting.
+- Decide the optimizer and report:
+  - Training batch size.
+  - Number of training epochs.
+  - Learning rate and any additional configurations (momentum, learning rate schedule, etc.).
+- Justify decisions.
+- Fit the model and show how training loss and evaluation metrics change.
+- Explain the criteria for stopping training.
 
-# Task 1.3 Fitting the model
-(weight ~ 20%)
+## Group 2: Improve the Model
 
-Decide and report the following settings:
+### Task 2.1: Check the Training Using TensorBoard
+- Use TensorBoard to visualize the training process.
+- Provide screenshots of TensorBoard output.
+- Identify any signs of overfitting or underfitting and the epoch at which they occur.
 
-The loss function
-The metrics for model evaluation (which may be different from the loss function)
-Explain their roles in model fitting.
+### Task 2.2: Apply Regularisation
+- Improve training by applying regularization techniques:
+  - Dropout
+  - Batch normalization
+- Compare the effects of different regularization techniques.
+- Optionally, explore other techniques such as learning rate scheduling.
 
-Decide the optimiser that you will use. Also report the following settings:
+## Group 3: Analyze the Learned Representations
+- Visualize embeddings at different layers of the trained neural network using UMAP.
+- Select a subset of training data containing both classes.
+- Extract embeddings from each layer for the dataset.
+- Apply UMAP to visualize embeddings in a 2D space, highlighting classes with distinct colors/markers.
+- Analyze and discuss the evolution of embeddings across layers:
+  - Clear separation between classes at any specific layer.
+  - Changes in separation and clustering of classes across layers.
+  - Notable changes in embedding distribution or structure.
+  - Layers where embeddings become less discriminative or more entangled.
+- Summarize findings and provide insights into the network's representation behavior.
 
-The training batch size
-The number of training epochs
-The learning rate. If you used momentum or a learning rate schedule, please report the configuration as well.
-Justify your decisions.
+## Group 4: Investigating Neural Collapse in Deep Learning
 
-Now fit the model. Show how the training loss and the evaluation metric change. How did you decide when to stop training?
+### Task 4.1: Research and Understand the Concept of Neural Collapse
+- Understand the problem addressed by the neural collapse paper and its relation to the unit content.
+- Explain how authors validate their proposed method or hypothesis.
 
-# Group 2 Improve the model
-(weight ~ 10%)
+### Task 4.2: Reproduce the NC Results
+- Reproduce experiments from the neural collapse paper.
+- Compare obtained results with those in the paper and identify any discrepancies.
+- Discover connections between the paper and unit content.
 
-# Task 2.1 Check the training using TensorBoard
-Use TensorBoard to visualise the training process. Show screenshots of your TensorBoard output.
+## Contact
+For any questions or inquiries, feel free to contact me via LinkedIn:
 
-Do you see overfitting or underfitting? Why? If you see overfitting, at which epoch did it happen?
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/syed-muqtasid-ali-91a0a623a/)
 
-# Task 2.2 Apply regularisation
-Improve the training process by applying regularisation. Below are some options:
+## License
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-Dropout
-Batch normalisation
-Compare the effect of different regularisation techniques on model training. You may also try other techniques for improving training such as learning rate scheduling (see https://www.tensorflow.org/api_docs/python/tf/keras/optimizers/schedules/LearningRateSchedule).
+---
 
-# Group 3 Analyse the learned representations
-(weight ~ 10%)
-
-In this task, you will explore the visualization of embeddings at different layers of your trained neural network and analyse how they evolve using Uniform Manifold Approximation and Projection (UMAP). Below are detailed steps you can follow.
-
-Select a subset of your training data containing both classes.
-Extract the embeddings from each layer of the neural network model for the dataset.
-Apply UMAP to visualise the embeddings from each layer in a 2-dimensional space, highlighting different classes with distinct colours or markers. Include appropriate labels and legends in your plots.
-Analyse and discuss the evolution of the embeddings across layers. Answer the following questions in your analysis:
-Do the embeddings show clear separation between classes at any specific layer?
-How do the separation and clustering of classes change as you move across layers?
-Are there any notable changes in the distribution or structure of the embeddings?
-Are there any layers where the embeddings become less discriminative or more entangled?
-Summarize your findings and provide insights into the behaviour of the neural network's representations at different layers. Discuss the implications of the observed changes in the embeddings for the network's ability to capture class-specific information and make predictions.
-# Group 4 Investigating Neural Collapse in Deep Learning
-(weight ~20%)
-
-In this research task, you will explore the phenomenon of "neural collapse" in deep learning models.
-
-# Task 4.1 Research and understand the concept of neural collapse in deep learning.
-What problem does the paper address? How is it related to what you have learnt in the unit so far?
-How do the authors validate their proposed method or hypothesis?
-# Task 4.2 Reproduce the NC results
-Reproduce experiments described in the neural collapse paper. Compare the results you obtained with the ones in the paper. Do you identify any discrepancies?
-
-What connections do you discover between the paper and what you have learnt in the unit.
+Happy Learning! 😊
