@@ -14,6 +14,7 @@ This project focuses on building a forward neural network for predicting diabete
 - [Group 4: Investigating Neural Collapse in Deep Learning](#group-4-investigating-neural-collapse-in-deep-learning)
   - [Task 4.1: Research and Understand the Concept of Neural Collapse](#task-41-research-and-understand-the-concept-of-neural-collapse)
   - [Task 4.2: Reproduce the NC Results](#task-42-reproduce-the-nc-results)
+- [🚀 How to Run the Files](#how-to-run-the-files)
 - [📬 Contact](#contact)
 - [📜 License](#license)
 
@@ -85,6 +86,32 @@ This project focuses on building a forward neural network for predicting diabete
 - Reproduce experiments from the neural collapse paper.
 - Compare obtained results with those in the paper and identify any discrepancies.
 - Discover connections between the paper and unit content.
+
+## 🚀 How to Run the Files
+
+1. Clone the repository:
+    ```sh
+    git clone https://github.com/your-username/diabetes-prediction.git
+    ```
+
+2. Navigate to the project directory:
+    ```sh
+    cd diabetes-prediction
+    ```
+
+3. Install the required dependencies:
+    ```sh
+    pip install -r requirements.txt
+    ```
+
+4. Run the Jupyter Notebook:
+    ```sh
+    jupyter notebook
+    ```
+
+5. Open the `Forward Neural Network.ipynb` file and execute the cells to follow along with the tasks.
+
+6. Additionally, you can view the detailed project explanation in the `forward neural network.pdf` file.
 
 ## 📬 Contact
 For any questions or inquiries, feel free to contact me via LinkedIn:
