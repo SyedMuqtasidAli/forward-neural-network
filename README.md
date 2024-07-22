@@ -1,8 +1,8 @@
-# Forward Neural Network for Diabetes Prediction
+# 🩺 Forward Neural Network for Diabetes Prediction
 
 This project focuses on building a forward neural network for predicting diabetes using a given dataset. The tasks include understanding the data, setting up a model for training, fitting the model, improving the model, analyzing learned representations, and investigating neural collapse in deep learning.
 
-## Table of Contents
+## 📚 Table of Contents
 - [Group 1: Construct a Forward Neural Network](#group-1-construct-a-forward-neural-network)
   - [Task 1.1: Understanding the Data](#task-11-understanding-the-data)
   - [Task 1.2: Setting Up a Model for Training](#task-12-setting-up-a-model-for-training)
@@ -14,8 +14,8 @@ This project focuses on building a forward neural network for predicting diabete
 - [Group 4: Investigating Neural Collapse in Deep Learning](#group-4-investigating-neural-collapse-in-deep-learning)
   - [Task 4.1: Research and Understand the Concept of Neural Collapse](#task-41-research-and-understand-the-concept-of-neural-collapse)
   - [Task 4.2: Reproduce the NC Results](#task-42-reproduce-the-nc-results)
-- [Contact](#contact)
-- [License](#license)
+- [📬 Contact](#contact)
+- [📜 License](#license)
 
 ## Group 1: Construct a Forward Neural Network
 
@@ -86,12 +86,12 @@ This project focuses on building a forward neural network for predicting diabete
 - Compare obtained results with those in the paper and identify any discrepancies.
 - Discover connections between the paper and unit content.
 
-## Contact
+## 📬 Contact
 For any questions or inquiries, feel free to contact me via LinkedIn:
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/syed-muqtasid-ali-91a0a623a/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue)](https://www.linkedin.com/in/syed-muqtasid-ali-91a0a623a/)
 
-## License
+## 📜 License
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ---
