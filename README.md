@@ -122,5 +122,4 @@ For any questions or inquiries, feel free to contact me via LinkedIn:
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ---
-
 Happy Learning! 😊
