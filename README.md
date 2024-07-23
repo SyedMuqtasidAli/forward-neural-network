@@ -91,7 +91,7 @@ This project focuses on building a forward neural network for predicting diabete
 
 1. Clone the repository:
     ```sh
-    git clone https://github.com/your-username/diabetes-prediction.git
+    git clone https://github.com/syed-muqtasid-ali/diabetes-prediction.git
     ```
 
 2. Navigate to the project directory:
